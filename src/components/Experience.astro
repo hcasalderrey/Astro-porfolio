@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador independiente FullStack .NET / JS",
+    company: "HC Soluciones",
+    description:
+      "Freelance desarrollo de software de calidad, tanto web como desktop. Desarrollo de sistemas informaticos a medida y requisitos del cliente. Soporte del desarrollo, Capacitación e Implementación. ",
+    link: "https://hcsoluciones.com.ar",
+  },
+  {
+    date: "Mayo 2013",
+    title: "Desarrollador ASP.NET C# SQL",
+    company: "FCP Consulting",
+    description:
+      "Desarrollo de sistemas a medida de los requerimientos de los cleintes.",
+  },
+  {
+    date: "Junio 2012",
+    title: "Soporte y Desarrollador",
+    company: "Hidalgo & Asociados",
+    description:
+      "Soporte de Meta4 y SQL server. Desarrollador PHP y MySQL",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
